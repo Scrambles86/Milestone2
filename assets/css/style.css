@@ -32,8 +32,12 @@ body {
 .hero-text {
   text-align: center;
   position: fixed;
-  top: 35%;
-  left: 80%;
+  top: 25%;
+  left: 50%;
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  font-weight: 500;
+  margin-top: 110px;
 }
 
 .full-game {
