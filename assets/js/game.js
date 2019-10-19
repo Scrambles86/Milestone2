@@ -21,6 +21,9 @@ let hasFlippedCard = false
 let boardLocked = false;
 let firstCard, secondCard;
 let selectedOneCard  = false;
+let pairCounter = 1;
+let pairTotal = 6;
+let eachCard = [];
 
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
