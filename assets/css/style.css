@@ -29,6 +29,13 @@ body {
   margin-top: 50px;
 }
 
+.hero-text {
+  text-align: center;
+  position: fixed;
+  top: 35%;
+  left: 80%;
+}
+
 .full-game {
   font-family: 'Fredoka One', cursive;
 }
