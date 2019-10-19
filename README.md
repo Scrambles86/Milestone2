@@ -11,3 +11,8 @@ is my hope that a broader audience can be engaged as well as the pre-existing au
 in the game are a mix of recognisable characters, along with some more niche characters. The reason for this is that if an odler retro gaming fan
 decided to play the game with their kids, they could then introduce their kids to these older games after unveiling the characters in the memory game.</p>
 <ul>
+<li>I am a fan of retro gaming, who would like to play a fun game with my kids to show them gaming characters from my past, perhaps getting them interested in older games.</li>
+<li>I am a fan of retro gaming who would like to discover games i haven’t played before in a fun and casual manner.</li>
+<li>I’m a big fan of gaming, but am unfamiliar with older games, and I’d like to find out more.</li>
+<li>I’m a frequent visitor of Games Revisited, and would like to see a little more fun and interactivity implemented in the site.</li>
+</ul>
