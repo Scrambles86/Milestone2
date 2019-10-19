@@ -15,3 +15,7 @@ body {
   font-family: 'Fredoka One', cursive;
   text-align: left;
 }
+
+.row {
+  text-align: center;
+}
