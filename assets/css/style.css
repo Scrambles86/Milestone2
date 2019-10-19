@@ -10,3 +10,8 @@ body {
   height: 100vh;
   text-align: center;
 }
+
+.header {
+  font-family: 'Fredoka One', cursive;
+  text-align: left;
+}
