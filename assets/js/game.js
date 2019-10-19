@@ -8,3 +8,9 @@ GAME FUNCTION:
 - Notify the player of the correct answer if there is a match
 - Let player choose to play again
 */
+
+// Global variables
+let hasFlippedCard = false
+let boardLocked = false;
+let firstCard, secondCard;
+let selectedOneCard  = false;
