@@ -22,4 +22,6 @@ let boardLocked = false;
 let firstCard, secondCard;
 let selectedOneCard  = false;
 
-
+function checkForMatch() {
+    let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    }
