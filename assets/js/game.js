@@ -43,3 +43,18 @@ function flipCard() {
     hasFlippedCard = false;
     checkForMatch();
 }
+
+function disableCards() {
+   firstCard.removeEventListener('click', flipCard);
+   secondCard.removeEventListener('click', flipCard);
+ }
+ 
+ function unflipCards() {
+    boardLocked = true;
+    
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+        boardLocked = false;
+    }, 1500);
+ }
