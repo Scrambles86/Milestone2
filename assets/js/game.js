@@ -12,6 +12,10 @@ GAME FUNCTION:
 $(document).ready(function () {
 });
 
+// Query selector for the card class
+const cards = document.querySelectorAll('.memory-card');
+cards.forEach(card => card.addEventListener('click', flipCard));
+
 // Global variables
 let hasFlippedCard = false
 let boardLocked = false;
