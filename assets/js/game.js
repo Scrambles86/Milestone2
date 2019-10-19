@@ -28,3 +28,18 @@ let eachCard = [];
 function checkForMatch() {
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
     }
+
+function flipCard() {
+
+    
+    
+    if (!hasFlippedCard) {
+        hasFlippedCard = true;
+        firstCard = this;
+        return;
+    }
+    
+    secondCard = this;
+    hasFlippedCard = false;
+    checkForMatch();
+}
