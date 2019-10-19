@@ -9,6 +9,9 @@ GAME FUNCTION:
 - Let player choose to play again
 */
 
+$(document).ready(function () {
+});
+
 // Global variables
 let hasFlippedCard = false
 let boardLocked = false;
