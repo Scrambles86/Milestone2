@@ -3,3 +3,10 @@
   margin: 0;
   border-box: 0;
 }
+
+body {
+  background-image: url("assets/images/easy/castle.png");
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: center;
+}
