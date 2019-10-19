@@ -21,3 +21,13 @@ let hasFlippedCard = false
 let boardLocked = false;
 let firstCard, secondCard;
 let selectedOneCard  = false;
+
+   <!-- Select Bar -->
+
+    <div class="select-bar">
+        <select id="dropdown-toggle" onchange="selectDifficulty()">Select Difficulty</button>
+       <option class="dropdown-item" value="Easy">Easy</option>
+       <option class="dropdown-item" value="Medium">Medium</option>
+       <option class="dropdown-item" value="Hard">Hard</option>
+    </select>
+    </div>
