@@ -39,3 +39,8 @@ body {
 .full-game {
   font-family: 'Fredoka One', cursive;
 }
+
+.memory-game {
+  width: 45%;
+  margin: auto;
+}
