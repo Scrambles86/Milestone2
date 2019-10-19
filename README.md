@@ -1,15 +1,8 @@
-         ___        ______     ____ _                 _  ___  
-        / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
-       / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
-      / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
-     /_/   \_\_/\_/  |____/   \____|_|\___/ \__,_|\__,_|  /_/ 
- ----------------------------------------------------------------- 
+<h1>Flip Card Memory Game</h1>
 
-
-Hi there! Welcome to AWS Cloud9!
-
-To get started, create some files, play with the terminal,
-or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
-
-Happy coding!
-# Milestone2
+<p>This memory game was created for my second milestone project, and the idea behind it is that it would work in conjunction with
+the retro gaming website that I created for my initial project. With the memory game working as part of the site, I believe that a greater
+user engagement can be created - be it reminding existing retro gamers of older characters, or engaging younger players with no prior
+knowledge of retor gaming.</p>
+<p>As acknowledged in my previous project, Games Revisited is very much a niche website. By adding more accessible content such as this meory game, it
+is my hope that a broader audience can be engaged as well as the pre-existing audience.</p>
