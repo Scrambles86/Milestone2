@@ -218,6 +218,11 @@ body {
   pointer-events: none;
 }
 
+#flip-screen {
+    font-family: 'Fredoka One', cursive;
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
   body * {
  /* visibility: hidden;*/
@@ -225,6 +230,6 @@ body {
   position: absolute;
   }
   #flip-screen {
-      visibility: visible;
+      display: block;
   }
 }
