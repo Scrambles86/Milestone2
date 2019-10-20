@@ -43,6 +43,19 @@ a future additional feature.</p>
 <li>Super Hard Mode : I'd like to make a version of the game with more images in the grid, but was unable to do so as it created too much clutter on mobile devices.</li>
 <li>Retro Mode : I had the idea to make a version of the game that including lesser known retro game characters. This could be used in conjunction with the GR site, and have the images hyperlinked to take the user to the specific game page for that character.</li>
 </ul>
+<h3>Javascript Features</h3>
+<ul>
+<li>The global variables set cards and timer to zero. Additionally there is a pairTotal of 6, to let the game know that the maximum number of pairs that can be added into the array is 6.</li>
+<li>Check for match looks in the memory game class for two cards that match the same data framework. If they match the function calls the trueMacth funtion, if they don't it calls the unFlip function. A timeout of 1 second is set to removed the locked class after 1 second. This is to stop the cards from being clicked too fast, potentially breaking the game.</li>
+<li>The trueMatch function checks to see if the amount of matched pairs is equal to the final pair total. If it is, it calls the win-game modal from css and html.</li>
+<li>The correct match function first listen for an onclick of the card, which calls the css flip class and adds a pair to the pair counter</li>
+<li>The flipCard function adds one to the flip attempts in the game, adds the class of flip from css to the flipped card, and calls the board lock function. It holds the first card in place until a second card has been flipped, where it then calls the check for match function</li>
+<li>The unflipCards function locks the board and removes the class of flip from cards that dont match. It does this in .8 of a second to keep the flow of the game quick.</li>
+<li>The shuffle function was taken from Marina Ferriera's memory game on <a href="https://github.com/code-sketch/memory-game/" target="_blank">github</a>. The function shuffles the 12 images randomly and is wrapped in extra parenthesis, which calls the function at game start.</li>
+<li>The difficulty select function first hides the main game and shows the hero image. It then uses a switch to call the chosen difficulty, hiding the hero image and showing the main game.</li>
+<li>The set timer function sets a countdown to start on whatever time has been placed in the html. It has been called to not appear at all on easy mode, and to show the game over modal when the timer reaches zero.</li>
+</ul>
+<h2>Technologies Used</h2>
 
 
 
