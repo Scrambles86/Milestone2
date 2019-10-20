@@ -76,3 +76,15 @@ function disableCards() {
     });
 })();
 
+$(".close, #restart").click(function(){
+    window.location.reload(false);
+});
+
+function setTimer(count){
+    var thiscount = count, timer = setInterval(function() {
+        
+                clearInterval(timer);
+            }
+        }
+    }, 1000);
+}
