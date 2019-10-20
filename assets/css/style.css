@@ -219,8 +219,12 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-  .full-game * {
-  visibility: hidden;
+  body * {
+ /* visibility: hidden;*/
+  display: none;
   position: absolute;
+  }
+  #flip-screen {
+      visibility: visible;
   }
 }
