@@ -66,3 +66,30 @@ function disableCards() {
         secondCard.classList.remove('flip');
     }, 1000);
 }
+
+// shuffle function wrapped in extra parenthesis to call function immediately
+(function shuffle() {
+    cards.forEach(card => {
+        // multiplied by 12 to account for cards 1 to 11
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
+
+function selectDifficulty() {
+      var level= document.getElementById("dropdown-toggle").value;
+        $(".levelGrid").hide();
+    switch (level) {
+        case "Easy": 
+            $(".easyGrid").show();
+            break;
+        case "Medium":
+            $(".mediumGrid").show();
+            break;
+        case "Hard":
+            $(".hardGrid").toggle();
+            break;
+        default: 
+            $(".easyGrid").show();
+    }
+}
