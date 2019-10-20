@@ -67,6 +67,33 @@ function disableCards() {
     }, 1000);
 }
 
+// difficulty select
+$(".select-diff").click(function(){
+    let diff = $(this).attr('data-value');
+    difficulty = diff;
+    $(".hero-image").hide();
+    $('.full-game').show();
+    
+        switch (diff) {
+        case "1":
+            $(".easyGrid").show();
+            $('#mode').html('&nbsp; Easy');
+            break;
+        case "2":
+            $(".mediumGrid").show();
+            $('#mode').html('&nbsp; Medium');
+            setTimer(60);
+            break;
+        case "3":
+            $(".hardGrid").show();
+            $('#mode').html('&nbsp; Hard');
+            setTimer(30);
+            break;
+        default:
+            console.log("Something went wrong somehow");
+    }
+});
+
 // shuffle function wrapped in extra parenthesis to call function immediately
 (function shuffle() {
     cards.forEach(card => {
