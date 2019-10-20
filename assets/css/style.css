@@ -1,85 +1,85 @@
 * {
-  padding: 0;
-  margin: 0;
-  border-box: 0;
+    padding: 0;
+    margin: 0;
+    border-box: 0;
 }
 
 body {
-  background-image: url("../images/easy/castle.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
+    background-image: url("../images/easy/castle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
 }
 
 .rules-read {
-  padding: 10px;
-  margin-top: 30px;
-  background-image: url("../images/easy/brick.png");
+    padding: 10px;
+    margin-top: 30px;
+    background-image: url("../images/easy/brick.png");
 }
 
 .rules {
-  padding: 30px;
-  margin: 20px;
-  z-index: 1;
-  color: black;
-  background-color: white;
-  border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    z-index: 1;
+    color: black;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .row {
-  text-align: center;
+    text-align: center;
 }
 
 .form {
-  margin-top: 40px;
-  background-color: #5f38a6;
+    margin-top: 40px;
+    background-color: #5f38a6;
 }
 
 .header {
-  font-family: 'Fredoka One', cursive;
-  text-align: left;
+    font-family: 'Fredoka One', cursive;
+    text-align: left;
 }
 
 .title {
-  padding-top: 15%;
+    padding-top: 15%;
 }
 
 .page-title {
-  margin: 30px 0 !important;
+    margin: 30px 0 !important;
 }
 
 .full-game {
-  font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One', cursive;
 }
 
 .hero-image {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .hero-text {
-  text-align: center;
-  position: fixed;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-family: 'Fredoka One', cursive;
-  font-weight: 500;
-  margin-top: 110px;
+    text-align: center;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    margin-top: 110px;
 }
 
 
 .easyGrid {
-  display: block;
+    display: block;
 }
 
 .mediumGrid {
-  display: none;
+    display: none;
 }
 
 .hardGrid {
-  display: none;
+    display: none;
 }
 
 .game-grid {
@@ -89,104 +89,107 @@ body {
 }
 
 .card {
-  width: 100px;
-  height: 60px;
-  transform: scale(1);
+    width: 100px;
+    height: 60px;
+    transform: scale(1);
 }
 
 .game-table {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
-  position: inherit;
-  transform-style: preserve-3d;
-  transition: transform 1s;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: inherit;
+    transform-style: preserve-3d;
+    transition: transform 1s;
 }
 
 .memory-game {
-  width: 65%;
-  height: 480px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
+    width: 65%;
+    height: 480px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .memory-card {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
-  margin: 5px;
-  position: relative;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  transform: scale(1);
-  transform-style: preserve-3d;
-  transition: transform .5s;
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .memory-card:active {
-  transform: scale(0.97);
-  transition: transform .2s;
+    transform: scale(0.97);
+    transition: transform .2s;
 }
 
 .memory-card.flip {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .front-face,
 .back-face {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  position: absolute;
-  border-radius: 5px;
-  background: #1C7CCC;
-  backface-visibility: hidden;
-}
-.front-face {
-  transform: rotateY(180deg);
-  background-image: url("../images/easy/brick.png");
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #1C7CCC;
+    backface-visibility: hidden;
 }
 
-.select-diff, .back-face {
-  cursor: pointer;
+.front-face {
+    transform: rotateY(180deg);
+    background-image: url("../images/easy/brick.png");
+}
+
+.select-diff,
+.back-face {
+    cursor: pointer;
 }
 
 .mem-modal {
-  position: fixed;
-  z-index: 5;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .mem-modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
 }
 
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.close:hover, .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .mem-info {
-  margin: 30px 20%;
+    margin: 30px 20%;
 }
 
 .alert.alert-success.mem-alert {
@@ -199,37 +202,44 @@ body {
 }
 
 .alert.alert-success.mem-alert p {
-  color: #fff;
+    color: #fff;
 }
 
-.mem-alert p, .mem-alert button {
-  margin: 0;
+.mem-alert p,
+.mem-alert button {
+    margin: 0;
 }
 
 #restart {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.select-diff:hover, #restart:hover {
-  border: 1px solid darkgreen;
+.select-diff:hover,
+#restart:hover {
+    border: 1px solid darkgreen;
 }
 
 .locked {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 #flip-screen {
     font-family: 'Fredoka One', cursive;
     display: none;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 50%;
 }
 
 @media only screen and (max-width: 600px) {
-  body * {
- /* visibility: hidden;*/
-  display: none;
-  position: absolute;
-  }
-  #flip-screen {
-      display: block;
-  }
+    .main-content * {
+        /* visibility: hidden;*/
+        display: none;
+        position: absolute;
+    }
+    #flip-screen {
+        display: block;
+        position: absolute;
+
+    }
 }
