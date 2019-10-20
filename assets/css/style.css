@@ -11,13 +11,45 @@ body {
   text-align: center;
 }
 
+.rules-read {
+  padding: 10px;
+  margin-top: 30px;
+  background-image: url(assets/images/easy/brick.png);
+}
+
+.rules {
+  padding: 30px;
+  margin: 20px;
+  z-index: 1;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.row {
+  text-align: center;
+}
+
+.form {
+  margin-top: 40px;
+  background-color: #5f38a6;
+}
+
 .header {
   font-family: 'Fredoka One', cursive;
   text-align: left;
 }
 
-.row {
-  text-align: center;
+.title {
+  padding-top: 15%;
+}
+
+.page-title {
+  margin: 30px 0 !important;
+}
+
+.full-game {
+  font-family: 'Fredoka One', cursive;
 }
 
 .hero-image {
@@ -36,8 +68,38 @@ body {
   margin-top: 110px;
 }
 
-.full-game {
-  font-family: 'Fredoka One', cursive;
+
+.easyGrid {
+  display: block;
+}
+
+.mediumGrid {
+  display: none;
+}
+
+.hardGrid {
+  display: none;
+}
+
+.game-grid {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.card {
+  width: 100px;
+  height: 60px;
+  transform: scale(1);
+}
+
+.game-table {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: inherit;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .memory-game {
@@ -47,6 +109,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
 }
 
 .memory-card:active {
@@ -68,7 +141,6 @@ body {
   background: #1C7CCC;
   backface-visibility: hidden;
 }
-
 .front-face {
   transform: rotateY(180deg);
   background-image: url("assets/images/easy/brick.png");
@@ -112,10 +184,35 @@ body {
   cursor: pointer;
 }
 
+.mem-info {
+  margin: 30px 20%;
+}
+
+.alert.alert-success.mem-alert {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
 .btn {
     margin: 0px 20px;
 }
 
+.alert.alert-success.mem-alert p {
+  color: #fff;
+}
+
+.mem-alert p, .mem-alert button {
+  margin: 0;
+}
+
+#restart {
+  cursor: pointer;
+}
+
 .select-diff:hover, #restart:hover {
   border: 1px solid darkgreen;
+}
+
+.locked {
+  pointer-events: none;
 }

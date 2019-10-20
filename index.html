@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css" framework="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-
-<body>
-    
-<div class ="hero-image">
-    <div class ="hero-text"></div>
-    <h1 class="title">Games Revisited Presents : The Revisitor!</h1>
-    <p>Select Your Difficulty</p>
-    <button>Easy</button>
-    <button>Medium</button>
-    <button>Hard</button>
-</div>
-
-<div class="full-game">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>The Revisitor</title>
+      <link rel="stylesheet" href="assets/css/style.css" framework="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 class="title">Games Revisited Presents : The Revisitor!</h1>
+        <p>Select Your Difficulty</p>
+        <button class="select-diff btn btn-success" data-value="1">Easy</button>
+        <button class="select-diff btn btn-success" data-value="2">Medium</button>
+        <button class="select-diff btn btn-success" data-value="3">Hard</button>
+        <div class="container">
+          <div class="rules-read">
+            <div class="rules">
+              <h1>The Rules</h1>
+              <ul>Easy - Take your time! Click away and match all the pairs of Mario and his friends</ul>
+              <ul>Medium - Little bit harder now - you only have 60 seconds to find everyone</ul>
+              <ul>Hard - Only 30 seconds!? Good luck!</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="full-game">
       <header>
         <div class="container">
           <div class="row">
@@ -39,16 +46,14 @@
           <div class="col-sm-4"></div>
         </div>
       </div>
-
-      <div class="container">
-         <section class="memory-game">
-        <div class="memory-card" data-framework="mario" >
-          <img src="assets/images/easy/mario.png" alt="mario">
-          <img src="assets/images/easy/block.png" alt="Memory Card">
+      <section class="memory-game">
+        <div class="memory-card" data-framework="mario">
+          <img class="front-face" src="assets/images/easy/mario.png" alt="mario">
+          <img class="back-face" src="assets/images/easy/block.png" alt="Memory Card">
         </div>
         <div class="memory-card" data-framework="mario">
-          <img src="assets/images/easy/mario.png" alt="mario">
-          <img src="assets/images/easy/block.png" alt="Memory Card">
+          <img class="front-face" src="assets/images/easy/mario.png" alt="mario">
+          <img class="back-face" src="assets/images/easy/block.png" alt="Memory Card">
         </div>
         <div class="memory-card" data-framework="luigi">
           <img class="front-face" src="assets/images/easy/luigi.png" alt="luigi">
@@ -89,7 +94,6 @@
         <div class="memory-card" data-framework="mega">
           <img class="front-face" src="assets/images/easy/mega.png" alt="mega">
           <img class="back-face" src="assets/images/easy/block.png" alt="Memory Card">
-        </div>
         </div>
       </section>
       <div class="container mem-info">
@@ -103,13 +107,17 @@
               <div id="restart" class="alert alert-success mem-alert" >
                 <p>Restart</p>
               </div>
-              <div class="col-sm-4">
+          </div>
+          <div class="col-sm-4">
             <div class="alert alert-success mem-alert" >
               <p>Mode : <span id="mode"></span></p>
             </div>
           </div>
+        </div>
       </div>
-          <div id="won-modal" class="mem-modal">
+    </div>
+    
+    <div id="won-modal" class="mem-modal">
       <div class="mem-modal-content">
         <span class="close">&times;</span>
         <div id="modal-win">
@@ -121,11 +129,8 @@
         </div>
       </div>
     </div>
-
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" framework="text/javascript"></script>
     <script src="assets/js/game.js"></script>
-</body>
-
+  </body>
 </html>
+
