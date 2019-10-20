@@ -216,3 +216,10 @@ body {
 .locked {
   pointer-events: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .full-game * {
+  visibility: hidden;
+  position: absolute;
+  }
+}
