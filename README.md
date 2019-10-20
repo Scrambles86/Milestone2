@@ -19,6 +19,7 @@ by adding a sort of gateway for more casual or younger gaming fans.</p>
 <li>I would like to play a fun and interactive game to help me improve my memory</li>
 </ul>
 <h2>Features</h2>
+<h3>Existing Features</h3>
 <p>The Revisitor features a hero image to act as a landing page. On this page the user will find the game title,
 three buttons they can click to select their difficulty, and a div containing the rules of the game, and the difference in each version.
 In my original wireframes, a form was included for the user to enter their username. This was removed, as ultimately there didn't seem to be any real reason
@@ -35,6 +36,13 @@ grid, with a timer on the left. On trialling this using VS code, the screen beca
 As a results, the timer was moved about the grid. Additionally, a restart button was added to take the user back to the start page, as well as a flip 
 counter as a primitive way of keeping a score. This was added with the potential of being used with a user name to create a high score grid as
 a future additional feature.</p>
+<h3>Features Left To Implement</h3>
+<ul>
+<li>Username : Left out of this version of the project, in future I would like to implement a scoreboard that can save user scores in local storage</li>
+<li>Hyperlinks : I'd like to fully integrate this project with the original Games Revisited project. As well as a live version of the site, I think it would be beneficial to add a version of this game in the actual GR site</li>
+<li>Super Hard Mode : I'd like to make a version of the game with more images in the grid, but was unable to do so as it created too much clutter on mobile devices.</li>
+<li>Retro Mode : I had the idea to make a version of the game that including lesser known retro game characters. This could be used in conjunction with the GR site, and have the images hyperlinked to take the user to the specific game page for that character.</li>
+</ul>
 
 
 
