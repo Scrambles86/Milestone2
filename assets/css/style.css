@@ -59,7 +59,7 @@ body {
 
 .hero-text {
     text-align: center;
-    position: fixed;
+    position: relative;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -104,8 +104,8 @@ body {
 }
 
 .memory-game {
-    width: 65%;
-    height: 480px;
+    width: 480px;
+    height: 377px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -235,7 +235,7 @@ body {
     box-shadow: 22px 21px 5px 0px rgba(0, 0, 0, 0.77);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 567px) {
     .main-content * {
         /* visibility: hidden;*/
         display: none;
