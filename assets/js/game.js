@@ -10,7 +10,19 @@ GAME FUNCTION:
 */
 
 $(document).ready(function () {
+    $('.full-game').hide();
+    $('#won-modal').hide();
+    $('#modal-win').hide();
+    $('#modal-lose').hide();
+    $("#mem-table").hide();
 });
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 // Query selector for the card class
 const cards = document.querySelectorAll('.memory-card');
@@ -24,9 +36,30 @@ let selectedOneCard  = false;
 let pairCounter = 1;
 let pairTotal = 6;
 let eachCard = [];
+let flipCount = 0;
+let gameStart = false;
+var difficulty = 1;
 
 function checkForMatch() {
+    $('.memory-game').addClass('locked');
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+    if (isMatch) {
+        disableCards();
+        trueMatch();
+    } else {
+        unflipCards();
+    }
+    
+    setTimeout(() => {
+        $('.memory-game').removeClass('locked');
+    }, 1000);
+}
+
+function trueMatch() {
+    if (pairCounter === pairTotal) {
+        $('#modal-win').show();
+        $('#modal-attempt').html(flipCount);
+        $('#won-modal').show();
     }
 
 function flipCard() {
