@@ -73,3 +73,7 @@ body {
   transform: rotateY(180deg);
   background-image: url("assets/images/easy/brick.png");
 }
+
+.select-diff, .back-face {
+  cursor: pointer;
+}
