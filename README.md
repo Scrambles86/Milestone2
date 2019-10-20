@@ -56,6 +56,33 @@ a future additional feature.</p>
 <li>The set timer function sets a countdown to start on whatever time has been placed in the html. It has been called to not appear at all on easy mode, and to show the game over modal when the timer reaches zero.</li>
 </ul>
 <h2>Technologies Used</h2>
+<ul>
+<li>HTML5 - Used for rendering the site</li>
+<li>CSS3 - Used for styling the site</li>
+<li>Bootstrap 4 - Used for responsiveness</li>
+<li>Javascript - Used to create functionality in the site</li>
+<li>JQuery - Used for simplified JS functionality</li>
+<li>All images taken from Pexels and are copyright of Nintendo</li>
+</ul>
+<h2>Testing</h2>
+<ul>
+<li>The Revisitor has been tested on Mozilla Firefox and Google Chrome internet browsers, with no differences between the two, full functionality, and no issues with the design or Bootstrap. These tests took place on a 15" Macbook Pro in full screen.</li>
+<li>Tests have taken place on modern ipads, iphones and Samsung devices. There were some issues with clipping on the iphone5, but only with title, the game remains fully functional.</li>
+<li>The code has been tested in both an <a href="https://validator.w3.org/">HTML validator</a> and a <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>, returning no major issues.</li>
+<li>All JS and JQuery functions work in all browsers and on all devices</li>
+</ul>
+<h2>Deployment</h2>
+<p>The Revisitor is published <a href="https://scrambles86.github.io/Milestone2/" target="_blank">here</a>.</p>
+<p>The deployment version of the site can be found <a href="https://github.com/Scrambles86/Milestone2" target="_blank">here</a>.</p>
+<p>There are no difference between the development version and the deployed version, and there are no special requirements for running the code locally.</p>
+<h2>Credits</h2>
+<p>All designing was done by myself</p>
+<h3>Media</h3>
+<p>All images on the site were taken from pexels and Google Images, and are copyright and intellectual property of Nintendo. This game is intended for education purposes only. The flip function was designed by Marina Ferriera</p>
+<h3>Acknowledgements</h3>
+<p>Huge thank you to Simen Daehlin for all his help and continued support. I found learning JS to be a particular struggle, and his support has never waivered, and he is always positve in his feedback.</p>
+<p>Equally big thank you to my friends Dave Lovejoy, Olivia Kane and Ed Smith, all of whom have had a big part in guiding me through this project, keeping me focused and keeping me sane.</p>
+
 
 
 
