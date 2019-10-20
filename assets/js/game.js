@@ -2,13 +2,16 @@
 /*
 GAME FUNCTION:
 - Player must correctly guess all of the matching image pairs
-- Player has infinite guesses, but there is a time limit
-- Three different difficulties listed in a dropdown bar
+- Player has infinite guesses, but there is a time limit on harder difficulties
+- Three different difficulties listed in buttons on the landing page
 - Notify player of time left
-- Notify the player of the correct answer if there is a match
-- Let player choose to play again
+- Cards stay flipped once matched
+- Modal resets game to start screen
 */
-
+/**
+ * Hides full game and modals until they are called
+ * 
+ */ 
 $(document).ready(function () {
     $('.full-game').hide();
     $('#won-modal').hide();
@@ -40,6 +43,13 @@ let flipCount = 0;
 let gameStart = false;
 var difficulty = 1;
 
+/**
+ * Check for match looks in the memory game class for two cards that match the same data framework. 
+ * If they match the function calls the trueMatch funtion, if they don't it calls the unFlip function. 
+ * A timeout of 1 second is set to removed the locked class after 1 second. 
+ * This is to stop the cards from being clicked too fast, potentially breaking the game.
+ * 
+ */ 
 function checkForMatch() {
     $('.memory-game').addClass('locked');
     let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
@@ -55,6 +65,11 @@ function checkForMatch() {
     }, 1000);
 }
 
+/**
+ * The trueMatch function checks to see if the amount of matched pairs is equal to the final pair total.
+ * If it is, it calls the win-game modal from css and html.
+ * 
+ */ 
 function trueMatch() {
     if (pairCounter === pairTotal) {
         $('#modal-win').show();
@@ -69,7 +84,10 @@ function trueMatch() {
 }
 
 /**
- * Flips card on click using CSS class 'flip'
+ * The flipCard function adds one to the flip attempts in the game, 
+ * adds the class of flip from css to the flipped card, and calls the board lock function. 
+ * It holds the first card in place until a second card has been flipped, 
+ * where it then calls the check for match function
  * 
  */ 
 function flipCard() {
@@ -92,11 +110,20 @@ function flipCard() {
     checkForMatch();
 }
 
+/**
+ * Removes the flip class from cards when disable Cards is called
+ * 
+ */ 
 function disableCards() {
    firstCard.removeEventListener('click', flipCard);
    secondCard.removeEventListener('click', flipCard);
  }
 
+/**
+ * The unflipCards function locks the board and removes the class of flip from cards that dont match. 
+ * It does this in .8 of a second to keep the flow of the game quick.
+ * 
+ */ 
 function unflipCards() {
     boardLocked = true;
     
@@ -115,7 +142,10 @@ function noMatch() {
     }, 1000);
 }
 
-// shuffle function wrapped in extra parenthesis to call function immediately
+/**
+ * The shuffle function shuffles the 12 images randomly and is wrapped in extra parenthesis, which calls the function at game start.
+ * 
+ */ 
 (function shuffle() {
     cards.forEach(card => {
         // multiplied by 12 to account for cards 1 to 11
@@ -124,6 +154,11 @@ function noMatch() {
     });
 })();
 
+/**
+ * The difficulty select function first hides the main game and shows the hero image. 
+ * It then uses a switch to call the chosen difficulty, hiding the hero image and showing the main game.
+ * 
+ */ 
 // difficulty select
 $(".select-diff").click(function(){
     let diff = $(this).attr('data-value');
@@ -151,10 +186,15 @@ $(".select-diff").click(function(){
     }
 });
 
+//Restarts the game when the x is clicked in the modal
 $(".close, #restart").click(function(){
     window.location.reload(false);
 });
 
+/**
+ *The set timer function sets a countdown to start on whatever time has been placed in the html. 
+ *It has been called to not appear at all on easy mode, and to show the game over modal when the timer reaches zero.
+ */ 
 function setTimer(count){
     var thiscount = count, timer = setInterval(function() {
         if (difficulty != 1 && gameStart) {
