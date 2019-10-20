@@ -55,18 +55,18 @@ body {
 
 .hero-image {
     margin-top: 50px;
+    top: 50%;
 }
 
 .hero-text {
     text-align: center;
     position: relative;
-    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
     font-family: 'Fredoka One', cursive;
     font-weight: 500;
-    margin-top: 110px;
+    margin-top: 36%;
 }
 
 
