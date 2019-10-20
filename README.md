@@ -21,5 +21,17 @@ by adding a sort of gateway for more casual or younger gaming fans.</p>
 <h2>Features</h2>
 <p>The Revisitor features a hero image to act as a landing page. On this page the user will find the game title,
 three buttons they can click to select their difficulty, and a div containing the rules of the game, and the difference in each version.
-In my original wireframes, a form was included for the user to enter their username. This was removed, as ultimately there didn't seem to be much pointe
-in having it there without a scoring system in place.</p>
+In my original wireframes, a form was included for the user to enter their username. This was removed, as ultimately there didn't seem to be any real reason
+in having it in the game without a scoring system in place.</p>
+<p>In the main game, the user will find a title at the top of the screen and the game grid itself - including cards with flip functionality provided
+by a js function calling for a CSS class on click. Below the game grid itself are three small alerts created with Bootstrap. One contains the number
+of clicks of the board, the centre contains a restart button to return the user to the front page, and the rightmost alert displays the current
+chosen difficulty. Depending on the difficulty, the user will also find a countdown timer inbetween the title and the game grid - 60 seconds for 
+medium difficulty and 30 seconds for hard difficulty.</p>
+<p>Regardless of the outcome of the game, the user will be greeted by a modal. The modal is called either when the player has run out of time,
+of when the player has succesfully completed the game. The message in the modal is different dependent on the outcome. Closing the modal resets the game backto the title page.</p>
+<p>From a design perspective, the game looks quite different from the original wireframes. Most of t</p>
+
+
+
+

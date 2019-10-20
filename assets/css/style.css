@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("assets/images/easy/castle.png");
+  background-image: url("../images/easy/castle.png");
   background-repeat: no-repeat;
   height: 100vh;
   text-align: center;
@@ -14,7 +14,7 @@ body {
 .rules-read {
   padding: 10px;
   margin-top: 30px;
-  background-image: url(assets/images/easy/brick.png);
+  background-image: url("../images/easy/brick.png");
 }
 
 .rules {
@@ -143,7 +143,7 @@ body {
 }
 .front-face {
   transform: rotateY(180deg);
-  background-image: url("assets/images/easy/brick.png");
+  background-image: url("../images/easy/brick.png");
 }
 
 .select-diff, .back-face {
