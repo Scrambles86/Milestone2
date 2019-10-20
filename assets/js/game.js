@@ -76,20 +76,3 @@ function disableCards() {
     });
 })();
 
-function selectDifficulty() {
-      var level= document.getElementById("dropdown-toggle").value;
-        $(".levelGrid").hide();
-    switch (level) {
-        case "Easy": 
-            $(".easyGrid").show();
-            break;
-        case "Medium":
-            $(".mediumGrid").show();
-            break;
-        case "Hard":
-            $(".hardGrid").toggle();
-            break;
-        default: 
-            $(".easyGrid").show();
-    }
-}
