@@ -30,7 +30,11 @@ chosen difficulty. Depending on the difficulty, the user will also find a countd
 medium difficulty and 30 seconds for hard difficulty.</p>
 <p>Regardless of the outcome of the game, the user will be greeted by a modal. The modal is called either when the player has run out of time,
 of when the player has succesfully completed the game. The message in the modal is different dependent on the outcome. Closing the modal resets the game backto the title page.</p>
-<p>From a design perspective, the game looks quite different from the original wireframes. Most of t</p>
+<p>From a design perspective, the game looks quite different from the original wireframes. The original wireframes called for a right centred
+grid, with a timer on the left. On trialling this using VS code, the screen became very cluttered and often caused the grid itself to break.
+As a results, the timer was moved about the grid. Additionally, a restart button was added to take the user back to the start page, as well as a flip 
+counter as a primitive way of keeping a score. This was added with the potential of being used with a user name to create a high score grid as
+a future additional feature.</p>
 
 
 
