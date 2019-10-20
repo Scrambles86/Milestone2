@@ -7,7 +7,7 @@
 body {
     background-image: url("../images/easy/castle.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto;
     height: 100vh;
     text-align: center;
 }
@@ -42,7 +42,16 @@ body {
 }
 
 .title {
+    color: white;
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.title-padding {
     padding-top: 15%;
+
 }
 
 .page-title {
