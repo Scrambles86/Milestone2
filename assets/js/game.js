@@ -61,10 +61,25 @@ function trueMatch() {
         $('#modal-attempt').html(flipCount);
         $('#won-modal').show();
     }
+    // Correct Match
+    firstCard.removeEventListener('click', flipCard);
+    secondCard.removeEventListener('click', flipCard);
+    pairCounter++;
+    eachCard.push(firstCard, secondCard);
+}
 
+/**
+ * Flips card on click using CSS class 'flip'
+ * 
+ */ 
 function flipCard() {
-
-    
+    if (!gameStart) {
+        gameStart = true;
+    }
+    flipCount++;
+    $('#attempt').html('&nbsp;' + flipCount);
+    this.classList.add('flip');
+    if (boardLocked) return;
     
     if (!hasFlippedCard) {
         hasFlippedCard = true;
@@ -81,8 +96,8 @@ function disableCards() {
    firstCard.removeEventListener('click', flipCard);
    secondCard.removeEventListener('click', flipCard);
  }
- 
- function unflipCards() {
+
+function unflipCards() {
     boardLocked = true;
     
     setTimeout(() => {
@@ -91,14 +106,23 @@ function disableCards() {
         boardLocked = false;
     }, 800);
  }
- 
- function noMatch() {
+
+function noMatch() {
     boardLocked = true;
     setTimeout(() => {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
     }, 1000);
 }
+
+// shuffle function wrapped in extra parenthesis to call function immediately
+(function shuffle() {
+    cards.forEach(card => {
+        // multiplied by 12 to account for cards 1 to 11
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
 
 // difficulty select
 $(".select-diff").click(function(){
@@ -107,7 +131,7 @@ $(".select-diff").click(function(){
     $(".hero-image").hide();
     $('.full-game').show();
     
-        switch (diff) {
+    switch (diff) {
         case "1":
             $(".easyGrid").show();
             $('#mode').html('&nbsp; Easy');
@@ -127,22 +151,18 @@ $(".select-diff").click(function(){
     }
 });
 
-// shuffle function wrapped in extra parenthesis to call function immediately
-(function shuffle() {
-    cards.forEach(card => {
-        // multiplied by 12 to account for cards 1 to 11
-        let randomPos = Math.floor(Math.random() * 12);
-        card.style.order = randomPos;
-    });
-})();
-
 $(".close, #restart").click(function(){
     window.location.reload(false);
 });
 
 function setTimer(count){
     var thiscount = count, timer = setInterval(function() {
-        
+        if (difficulty != 1 && gameStart) {
+            $("#mem-table").show();
+            $("#counter").html(thiscount--);
+            if(thiscount === -2) {
+                $('#modal-lose').show();
+                $('#won-modal').show();
                 clearInterval(timer);
             }
         }
