@@ -4,6 +4,7 @@
     border-box: 0;
 }
 
+/* Main Game styling */
 body {
     background-image: url("../images/easy/castle.png");
     background-repeat: no-repeat;
@@ -11,6 +12,16 @@ body {
     height: 100vh;
     text-align: center;
 }
+
+.row {
+    text-align: center;
+}
+
+.full-game {
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Rules box styling */
 
 .rules-read {
     padding: 10px;
@@ -27,14 +38,7 @@ body {
     border-radius: 20px;
 }
 
-.row {
-    text-align: center;
-}
-
-.form {
-    margin-top: 40px;
-    background-color: #5f38a6;
-}
+/* Header and title styling */
 
 .header {
     font-family: 'Fredoka One', cursive;
@@ -58,9 +62,7 @@ body {
     margin: 30px 0 !important;
 }
 
-.full-game {
-    font-family: 'Fredoka One', cursive;
-}
+/* Hero Styling */
 
 .hero-image {
     margin-top: 50px;
@@ -78,6 +80,7 @@ body {
     margin-top: 36%;
 }
 
+/* Grid hiding */
 
 .easyGrid {
     display: block;
@@ -90,6 +93,8 @@ body {
 .hardGrid {
     display: none;
 }
+
+/* Game grid styling */
 
 .game-grid {
     width: 600px;
@@ -162,6 +167,8 @@ body {
     cursor: pointer;
 }
 
+/* Modal Styling */
+
 .mem-modal {
     position: fixed;
     z-index: 5;
@@ -203,6 +210,8 @@ body {
     margin: 30px 20%;
 }
 
+/* Alert and button styling */
+
 .alert.alert-success.mem-alert {
     background-color: #28a745;
     border-color: #28a745;
@@ -230,9 +239,13 @@ body {
     border: 1px solid darkgreen;
 }
 
+/* Board locking */
+
 .locked {
     pointer-events: none;
 }
+
+/* Flip screen styling and media queries */
 
 #flip-screen {
     font-family: 'Fredoka One', cursive;
