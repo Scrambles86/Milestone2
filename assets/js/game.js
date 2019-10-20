@@ -56,5 +56,13 @@ function disableCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         boardLocked = false;
-    }, 1500);
+    }, 800);
  }
+ 
+ function noMatch() {
+    boardLocked = true;
+    setTimeout(() => {
+        firstCard.classList.remove('flip');
+        secondCard.classList.remove('flip');
+    }, 1000);
+}
