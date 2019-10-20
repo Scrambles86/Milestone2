@@ -227,8 +227,12 @@ body {
     font-family: 'Fredoka One', cursive;
     display: none;
     text-align: center;
-    margin-left: 35%;
+    margin-left: 28%;
     margin-top: 50%;
+    margin-right: 27%;
+    -webkit-box-shadow: 22px 21px 5px 0px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 22px 21px 5px 0px rgba(0, 0, 0, 0.77);
+    box-shadow: 22px 21px 5px 0px rgba(0, 0, 0, 0.77);
 }
 
 @media only screen and (max-width: 600px) {
