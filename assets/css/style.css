@@ -58,6 +58,13 @@ body {
   transform: rotateY(180deg);
 }
 
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
 .front-face {
   transform: rotateY(180deg);
   background-image: url("assets/images/easy/brick.png");
