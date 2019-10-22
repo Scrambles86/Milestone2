@@ -20,15 +20,15 @@ by adding a sort of gateway for more casual or younger gaming fans.</p>
 <li>I would like to play a fun and interactive game to help me improve my memory</li>
 </ul>
 <h3>Wireframes</h3>
-<li><a href="assets/wireframes/landing-page.png" target=_"blank">Landing Page</a></li>
-<li><a href="assets/wireframes/landing-page-mobile.png" target=_"blank">Landing Page - Mobile</a></li>
-<li><a href="assets/wireframes/landing-page-tablet.png" target=_"blank">Landing Page - Tablet</a></li>
-<li><a href="assets/wireframes/full-game-easy-browser.png" target=_"blank">Full Game - Easy</a></li>
-<li><a href="assets/wireframes/full-game-easy-mobile.png" target=_"blank">Full Game Mobile - Easy</a></li>
-<li><a href="assets/wireframes/full-game-easy-tablet.png" target=_"blank">Full Game Tablet - Easy</a></li>
-<li><a href="assets/wireframes/full-game-med-hard-browser.png" target=_"blank">Full Game - Medium/Hard</a></li>
-<li><a href="assets/wireframes/full-game-med-hard-tablet.png" target=_"blank">Full Game Tablet - Medium/Hard</a></li>
-<li><a href="assets/wireframes/full-game-med-hard-mobile.png" target=_"blank">Full Game Mobile - Medium/Hard</a></li>
+<li><a href="https://imgur.com/jTF7MO5" target-"_blank">Landing Page</a></li>
+<li><a href="https://imgur.com/hZAeM13" target=_"blank">Landing Page - Mobile</a></li>
+<li><a href="https://imgur.com/ZXD5vSZ" target=_"blank">Landing Page - Tablet</a></li>
+<li><a href="https://imgur.com/ZKswXcg" target=_"blank">Full Game - Easy</a></li>
+<li><a href="https://imgur.com/NAdVBpE" target=_"blank">Full Game Mobile - Easy</a></li>
+<li><a href="https://imgur.com/LipehTv" target=_"blank">Full Game Tablet - Easy</a></li>
+<li><a href="https://imgur.com/2MsUFOe" target=_"blank">Full Game - Medium/Hard</a></li>
+<li><a href="https://imgur.com/aJwFNN7" target=_"blank">Full Game Tablet - Medium/Hard</a></li>
+<li><a href="https://imgur.com/mjuCoOx" target=_"blank">Full Game Mobile - Medium/Hard</a></li>
 <h2>Features</h2>
 <h3>Existing Features</h3>
 <p>The Revisitor features a hero image to act as a landing page. On this page the user will find the game title,
