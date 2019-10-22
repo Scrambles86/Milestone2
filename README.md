@@ -7,6 +7,7 @@ knowledge of retro gaming.</p>
 <p>As acknowledged in my previous project, Games Revisited is very much a niche website. By adding more accessible content such as this meory game, it
 is my hope that a broader audience can be engaged as well as the pre-existing audience.</p>
 <h2>UX</h2>
+<h3>User Stories</h3>
 <p>The main goal of creating this memory game was to add further connectivity between users on the retro gaming site. The characters
 in the current version of the game are all easily recognisable Nintendo characters, as a way to hopefully appeal to younger users - perhaps
 the children of the typical visitor of a retro gaming site. My hope is that this would create greater visibility for the original site
@@ -18,6 +19,16 @@ by adding a sort of gateway for more casual or younger gaming fans.</p>
 <li>I’m a frequent visitor of Games Revisited, and would like to see a little more fun and interactivity implemented in the site.</li>
 <li>I would like to play a fun and interactive game to help me improve my memory</li>
 </ul>
+<h3>Wireframes</h3>
+<li><a href="assets/wireframes/landing-page.png" target=_"blank">Landing Page</a></li>
+<li><a href="assets/wireframes/landing-page-mobile.png" target=_"blank">Landing Page - Mobile</a></li>
+<li><a href="assets/wireframes/landing-page-tablet.png" target=_"blank">Landing Page - Tablet</a></li>
+<li><a href="assets/wireframes/full-game-easy-browser.png" target=_"blank">Full Game - Easy</a></li>
+<li><a href="assets/wireframes/full-game-easy-mobile.png" target=_"blank">Full Game Mobile - Easy</a></li>
+<li><a href="assets/wireframes/full-game-easy-tablet.png" target=_"blank">Full Game Tablet - Easy</a></li>
+<li><a href="assets/wireframes/full-game-med-hard-browser.png" target=_"blank">Full Game - Medium/Hard</a></li>
+<li><a href="assets/wireframes/full-game-med-hard-tablet.png" target=_"blank">Full Game Tablet - Medium/Hard</a></li>
+<li><a href="assets/wireframes/full-game-med-hard-mobile.png" target=_"blank">Full Game Mobile - Medium/Hard</a></li>
 <h2>Features</h2>
 <h3>Existing Features</h3>
 <p>The Revisitor features a hero image to act as a landing page. On this page the user will find the game title,
@@ -77,10 +88,9 @@ a future additional feature.</p>
 <p>The deployment version of the site can be found <a href="https://github.com/Scrambles86/Milestone2" target="_blank">here</a>.</p>
 <p>There are no difference between the development version and the deployed version, and there are no special requirements for running the code locally.</p>
 <h2>Credits</h2>
-<p>All designing was done by myself</p>
-<h3>Media</h3>
-<p>All images on the site were taken from pexels and Google Images, and are copyright and intellectual property of Nintendo. This game is intended for education purposes only. The shuffle function and the data-framework model were designed by Marina Ferriera</p>
 <h3>Acknowledgements</h3>
+<p>All images on the site were taken from pexels and Google Images, and are copyright and intellectual property of Nintendo. This game is intended for education purposes only.</p>
+<p>The shuffle function and the data-framework model were designed by <a href="https://marina-ferreira.github.io/" target="_blank">Marina Ferriera</a></p>
 <p>Huge thank you to Simen Daehlin for all his help and continued support. I found learning JS to be a particular struggle, and his support has never waivered, and he is always positve in his feedback.</p>
 <p>Equally big thank you to my friends Dave Lovejoy, Olivia Kane and Ed Smith, all of whom have had a big part in guiding me through this project, keeping me focused and keeping me sane.</p>
 
