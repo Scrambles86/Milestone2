@@ -57,12 +57,13 @@ a future additional feature.</p>
 </ul>
 <h2>Technologies Used</h2>
 <ul>
-<li>HTML5 - Used for rendering the site</li>
-<li>CSS3 - Used for styling the site</li>
-<li>Bootstrap 4 - Used for responsiveness</li>
-<li>Javascript - Used to create functionality in the site</li>
-<li>JQuery - Used for simplified JS functionality</li>
-<li>All images taken from Pexels and are copyright of Nintendo</li>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Bootstrap 4</li>
+<li>Javascript</li>
+<li>JQuery</li>
+<li>Google Fonts</li>
+
 </ul>
 <h2>Testing</h2>
 <ul>
