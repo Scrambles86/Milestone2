@@ -1,4 +1,5 @@
 /* global $ */
+
 /*
 GAME FUNCTION:
 - Player must correctly guess all of the matching image pairs
@@ -8,6 +9,8 @@ GAME FUNCTION:
 - Cards stay flipped once matched
 - Modal resets game to start screen
 */
+
+
 /**
  * Hides full game and modals until they are called
  * 
@@ -159,7 +162,6 @@ function noMatch() {
  * It then uses a switch to call the chosen difficulty, hiding the hero image and showing the main game.
  * 
  */ 
-// difficulty select
 $(".select-diff").click(function(){
     let diff = $(this).attr('data-value');
     difficulty = diff;
@@ -168,16 +170,16 @@ $(".select-diff").click(function(){
     
     switch (diff) {
         case "1":
-            $(".easyGrid").show();
+            $("#easyGrid").show();
             $('#mode').html('&nbsp; Easy');
             break;
         case "2":
-            $(".mediumGrid").show();
+            $("#mediumGrid").show();
             $('#mode').html('&nbsp; Medium');
             setTimer(60);
             break;
         case "3":
-            $(".hardGrid").show();
+            $("#hardGrid").show();
             $('#mode').html('&nbsp; Hard');
             setTimer(30);
             break;

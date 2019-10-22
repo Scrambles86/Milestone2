@@ -57,12 +57,12 @@ a future additional feature.</p>
 </ul>
 <h2>Technologies Used</h2>
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>Bootstrap</li>
-<li>Javascript</li>
-<li>JQuery</li>
-<li>Google Fonts</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a></li>
+<li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+<li><a href="https://www.javascript.com/" target="_blank">Javascript</a></li>
+<li><a href="https://cdnjs.com/libraries/jquery/" target="_blank">JQuery</a></li>
+<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
 
 </ul>
 <h2>Testing</h2>
