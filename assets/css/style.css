@@ -8,7 +8,7 @@
 
 /* Main Game styling */
 body {
-    background-image: url("../images/easy/castle.png");
+    background-image: url("../images/castle.png");
     background-repeat: no-repeat;
     background-size: auto;
     height: 100vh;
@@ -28,7 +28,7 @@ body {
 .rules-read {
     padding: 10px;
     margin-top: 30px;
-    background-image: url("../images/easy/brick.png");
+    background-image: url("../images/brick.png");
 }
 
 .rules {
@@ -161,7 +161,7 @@ body {
 
 .front-face {
     transform: rotateY(180deg);
-    background-image: url("../images/easy/brick.png");
+    background-image: url("../images/brick.png");
 }
 
 .select-diff,
