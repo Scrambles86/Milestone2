@@ -57,9 +57,9 @@ a future additional feature.</p>
 </ul>
 <h2>Technologies Used</h2>
 <ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>Bootstrap 4</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Bootstrap</li>
 <li>Javascript</li>
 <li>JQuery</li>
 <li>Google Fonts</li>
