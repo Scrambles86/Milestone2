@@ -84,7 +84,24 @@ a future additional feature.</p>
 <li>All JS and JQuery functions work in all browsers and on all devices</li>
 </ul>
 <h2>Deployment</h2>
-<p>The Revisitor is published <a href="https://scrambles86.github.io/Milestone2/" target="_blank">here</a>.</p>
+<p>To deploy The Revisitor from <a href="https://scrambles86.github.io/Milestone2/" target="_blank">Github</a>.</p>
+<ul>
+<li>Login to Github</li>
+<li>Select the 'Repositories' tab</li>
+<li>Select the repository for 'Milestone2'</li>
+<li>From Settings, scroll to find 'github pages'</li>
+<li>Under Source, find the drop down menu</li>
+<li>From the drop down menu, select 'Master Branch'</li>
+<li>Once the page has refreshed, scroll back down to where you were to find the newly created url</li>
+</ul>
+<p>To run The Revisitor locally</p>
+<ul>
+<li>In the same Github repo, click the green button marked 'Clone or download'</li>
+<li>Select the image 'Copy To Clipboard'</li>
+<li>Open a Git Terminal</li>
+<li>Type in your directory location in the bash</li>
+<li>Type in 'git clone' and paste in the copied url</li>
+</ul>
 <p>The deployment version of the site can be found <a href="https://github.com/Scrambles86/Milestone2" target="_blank">here</a>.</p>
 <p>There are no difference between the development version and the deployed version, and there are no special requirements for running the code locally.</p>
 <h2>Credits</h2>
