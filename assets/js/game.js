@@ -20,7 +20,7 @@ $(document).ready(function () {
     $("#mem-table").hide();
 });
 
-var modal = document.getElementById('id01');
+let modal = document.getElementById('id01');
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -41,7 +41,7 @@ let pairTotal = 6;
 let eachCard = [];
 let flipCount = 0;
 let gameStart = false;
-var difficulty = 1;
+let difficulty = 1;
 
 /**
  * Check for match looks in the memory game class for two cards that match the same data framework. 
@@ -196,7 +196,7 @@ $(".close, #restart").click(function(){
  *It has been called to not appear at all on easy mode, and to show the game over modal when the timer reaches zero.
  */ 
 function setTimer(count){
-    var thiscount = count, timer = setInterval(function() {
+    let thiscount = count, timer = setInterval(function() {
         if (difficulty != 1 && gameStart) {
             $("#mem-table").show();
             $("#counter").html(thiscount--);
