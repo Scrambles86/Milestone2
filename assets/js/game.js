@@ -147,6 +147,7 @@ function noMatch() {
 
 /**
  * The shuffle function shuffles the 12 images randomly and is wrapped in extra parenthesis, which calls the function at game start.
+ * Credit for the Shuffle function  goes to Marina Ferriera https://marina-ferreira.github.io/
  * 
  */ 
 (function shuffle() {
