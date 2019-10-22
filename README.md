@@ -77,11 +77,24 @@ a future additional feature.</p>
 
 </ul>
 <h2>Testing</h2>
-<ul>
-<li>The Revisitor has been tested on Mozilla Firefox and Google Chrome internet browsers, with no differences between the two, full functionality, and no issues with the design or Bootstrap. These tests took place on a 15" Macbook Pro in full screen.</li>
-<li>Tests have taken place on modern ipads, iphones and Samsung devices. There were some issues with clipping on the iphone5, but only with title, the game remains fully functional.</li>
-<li>The code has been tested in both an <a href="https://validator.w3.org/">HTML validator</a> and a <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>, returning no major issues.</li>
-<li>All JS and JQuery functions work in all browsers and on all devices</li>
+<p>The Revisitor has been tested on Mozilla Firefox and Google Chrome internet browsers, with no differences between the two, full functionality, and no issues with the design or Bootstrap.
+These tests took place on a 15" Macbook Pro in full screen. The initial code was written in Visual Studio Code.</p>
+<p>Initial tests took place on the front page. Tests made sure that the difficulty buttons, title and rules box were centred on the broswer window, and on all mobile device windows.
+Further tests made sure that all buttons clicked through to their respective difficulties, which again was fine on all devices. Lastly,
+the console window was used to make sure that the 'flip screen to start' message appeared on any device smaller than an ipad, which was succesful.</p>
+<p>In the main game, the restart button was tested in all difficulties, and in all instances returned to the front page. The onclick flip function was tested for all images
+and on all difficulites. All images are in working order and flip correctly on all difficulties and on all devices. Testing also took place to make sure
+that the modals activated in the correct place. When the game is completed on easy, medium or hard, the 'you win' modal is shown, and then clicking x returns the user to the front 
+page in all instances.</p>
+<p>Further modal testing took place on the main page to make sure the 'you lose' modal was present at the right times, and functioned correctly. There is no time limit
+on the easy mode, so there is no potential for the 'you lose' modal to appear. On the medium difficulty, the 'you lose' modal appears correctly after the timer of 60 seconds
+runs down to zero, and clicking x on the modal returns the user to the front page. On the hard difficulty, the 'you lose' modal appears after the time of 30 seconds runs
+down to zero, and clicking x on the modal returns the user to the front page.</p>
+<p>The flip function itself was tested to make sure the user cannot break the game by overclicking. As a result, a 'locked' function was created, that stops the user from being able
+to click anything at all for one second once a pair has been flipped over. If the pair is a match, it will stay put. If the pair is not a match, it will flip back over in .8 of a second -
+this was made slightly less than the locked function to avoid any confusion in the code.</p>
+<p>The final step was to make sure that all code has been tested in both an <a href="https://validator.w3.org/">HTML validator</a> and a <a href="https://jigsaw.w3.org/css-validator/">CSS Validator</a>. These tests returned no issues with design or functionality.</p>
+
 </ul>
 <h2>Deployment</h2>
 <p>To deploy The Revisitor from <a href="https://scrambles86.github.io/Milestone2/" target="_blank">Github</a>.</p>
@@ -102,7 +115,6 @@ a future additional feature.</p>
 <li>Type in your directory location in the bash</li>
 <li>Type in 'git clone' and paste in the copied url</li>
 </ul>
-<p>The deployment version of the site can be found <a href="https://github.com/Scrambles86/Milestone2" target="_blank">here</a>.</p>
 <p>There are no difference between the development version and the deployed version, and there are no special requirements for running the code locally.</p>
 <h2>Credits</h2>
 <h3>Acknowledgements</h3>
